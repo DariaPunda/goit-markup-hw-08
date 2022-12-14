@@ -1,0 +1,92 @@
+/* ---------------------Common------------------- */
+body {
+    background-color: $main-white-color;
+    font-family: "Roboto", "Helvetica Neue", "Tahoma", sans-serif;
+    color: $primary-text-color;
+}
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    
+    &:hover, &:focus{
+        color: $accent-text-color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap {
+    position: relative;
+    width: 370px;
+}
+
+.button {
+
+    height: 50px;
+    width: 200px;
+
+    background-color: $accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+}
+
+/* -------------Padding for all sections------------- */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* -------------Work, Team, Clients Titles------------- */
+.title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* ---------------------Container------------------- */
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+

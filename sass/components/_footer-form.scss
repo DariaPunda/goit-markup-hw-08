@@ -1,0 +1,84 @@
+.form__join {
+    display: inline-block;
+    margin-left: 93px;
+}
+
+.form__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.form__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-white-color;
+}
+
+
+.form__input {
+    width: 358px;
+    height: 50px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    outline: transparent;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            }
+            
+        .form__label:focus-within &{
+            border: 1px solid $accent-text-color;
+                color: $main-white-color;
+        }
+
+        .form__label:hover & {
+            border: 1px solid $accent-text-color;
+        }
+
+}
+
+.form-button {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.button__text {
+    display: block;
+    text-align: start;
+
+    padding-left: 28px;
+    padding-right: 62px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $main-white-color;
+}
+
+.button__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    width: 24px;
+}

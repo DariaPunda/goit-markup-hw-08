@@ -1,0 +1,26 @@
+
+$main-white-color: #ffffff;
+$grey-bcg-color: #f5f4fa;
+$accent-bcg-color: #2f303a;
+$hero-bcg-color:#c4c4c4;
+
+$logo-black-color: #000000;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-text-color: #2196f3;
+$additional-address-color: rgba(255, 255, 255, 0.6);
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
