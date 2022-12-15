@@ -1,18 +1,28 @@
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .clients__list {
 @include position();
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .clients__item {
-    width: 170px;
+    width: 100%;
     height: 92px;
     align-items: center;
-}
+
+    @media screen and (max-width: 767px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+        
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 150px) / 6);
+        }
+    }
+
 
 .clients__link {
     @include position();

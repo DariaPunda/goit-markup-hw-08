@@ -1,13 +1,20 @@
 .form__join {
     display: inline-block;
-    margin-left: 93px;
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
+    }
+    
 }
 
 .form__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 570px;
+    width: 100%;
+    @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
 
 .form__title {
@@ -55,10 +62,19 @@
 
 }
 
+ .form__label{
+    @media screen and (max-width: 1199px) {
+           width: 100%;
+        }
+ }
+
 .form-button {
     position: relative;
     padding: 0;
     cursor: pointer;
+    @media screen and (max-width: 1199px) {
+        margin-top: 30px;
+        }
 
 }
 

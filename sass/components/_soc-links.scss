@@ -31,11 +31,14 @@
 
 .soc__list {
     @include position();
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     gap: 10px;
-}
+
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
+    }
+
 
 .soc__item {
     width: 44px;
@@ -54,6 +57,10 @@
 .join__list {
   display: flex;
   gap: 10px;
+@media screen and (max-width: 1199px) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
 }
 
 .join__item {
