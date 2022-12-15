@@ -583,6 +583,9 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -798,6 +801,7 @@ header {
   position: relative;
   padding: 0;
   cursor: pointer;
+  margin-left: 12px;
 }
 @media screen and (max-width: 1199px) {
   .form-button {
