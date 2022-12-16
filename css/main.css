@@ -118,7 +118,6 @@ img {
 
 header {
   border-bottom: 1px solid #ececec;
-  position: relative;
 }
 
 .header {
@@ -129,6 +128,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -894,7 +894,10 @@ header {
 
 .modal {
   position: absolute;
-  min-width: 450px;
+  height: 609px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  min-width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
