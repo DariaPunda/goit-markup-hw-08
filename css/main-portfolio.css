@@ -690,7 +690,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .form__input {
-    max-width: 358px;
+    width: 358px;
   }
 }
 
