@@ -7,13 +7,70 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpeg);
-    background-size: cover;
+background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+   
+
+    @media screen and (max-width:767px) {
+    background-image:linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../../images/hero-bg-480@1x.jpeg);
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            .hero-section {
+            background-image:linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), 
+                    url(../../images/hero-bg-960@2x.jpeg);
+            }
+
+        }
+    }
+
+     @media screen and (min-width:768px) {
+        background-image:linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../../images/hero-bg-768@1x.jpeg);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            .hero-section {
+                
+            background-image:linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), 
+                    url(../../images/hero-bg-1536@2x.jpeg);
+            }
+
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/hero-bg-1600@1x.jpeg);
+        
+        
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            .hero-section {
+                background-image:linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), 
+                        url(../../images/hero-bg-3200@2x.jpeg);
+            }
+    
+        }
+    
+    }
 }
 
 .hero__title {
@@ -26,6 +83,15 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $main-white-color;
+
+    @media screen and (max-width:1199px){
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 360px;
+    }
 }
 
 .hero__button {

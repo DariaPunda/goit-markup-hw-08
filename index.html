@@ -62,14 +62,14 @@
       </div>
     </header>
     <main>
-       <!-- <section class="hero-section section ">
+       <section class="hero-section section ">
         <div class="container hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
      <section class="section">
         <div class="container features">
           <h2 class="visually-hidden">Особливості</h2>
@@ -132,10 +132,12 @@
               <a href="">
                 <div class="work__wrap wrap">
                   <img
-                    src="./images/img1.jpeg"
-                    alt="Людина пише код"
-                    width="370"
                     class="work__img"
+                    srcset="./images/img1-370.jpeg 370w, ./images/img1-740.jpeg 740w, ./images/img1-1110.jpeg 1110w"
+                    src="./images/img1-370.jpeg"
+                    alt="Людина пише код"
+                    sizes="(min-width: 1200px) 33vw, 100vw"
+                    
                   />
                   <div class="work__thumb">
                     <h3 class="work__label">Десктопні додатки</h3>
@@ -147,10 +149,12 @@
               <a href="">
                 <div class="work__wrap wrap">
                   <img
-                    src="./images/img2.jpeg"
-                    alt="Людина тримає телефон та дивиться на прототипи на екрані комп'ютера "
-                    width="370"
                     class="work__img"
+                    srcset="./images/img2-370.jpeg 370w, ./images/img2-740.jpeg 740w, ./images/img2-1110.jpeg 1110w"
+                    src="./images/img2-370.jpeg"
+                    alt="Людина тримає телефон та дивиться на прототипи на екрані комп'ютера "
+                    sizes="(min-width: 1200px) 33vw, 100vw"
+                    
                   />
                   <div class="work__thumb">
                     <h3 class="work__label">Мобільні додатки</h3>
@@ -162,10 +166,12 @@
               <a href="">
                 <div class="work__wrap wrap">
                   <img
-                    src="./images/img3.jpeg"
+                  class="work__img"
+                    srcset="./images/img3-370.jpeg 370w, ./images/img3-740.jpeg 740w, ./images/img3-1110.jpeg 1110w"
+                    src="./images/img3-370.jpeg"
                     alt="Людина тримає Айпед з кольоровою схемою на ньому"
-                    width="370"
-                    class="work__img"
+                     sizes="(min-width: 1200px) 33vw, 100vw"
+                    
                   />
                   <div class="work__thumb">
                     <h3 class="work__label">Дизайнерські рішення</h3>
@@ -183,9 +189,10 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/ihor.jpeg"
+                srcset="./images/ihor-270.jpeg 270w, ./images/ihor-540.jpeg 540w, ./images/ihor-810.jpeg 810w"
+                src="./images/ihor-270.jpeg"
                 alt="Портрет Ігора"
-                width="100%"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="member">
                 <h3 class="member__title">Ігор Дем'яненко</h3>
@@ -227,9 +234,11 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/olha.jpeg"
+                srcset="./images/olha-270.jpeg 270w, ./images/olha-540.jpeg 540w, ./images/olha-810.jpeg 810w"
+                src="./images/olha-270.jpeg"
                 alt="Портрет Ольги"
-                width="100%"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+
               />
               <div class="member">
                 <h3 class="member__title">Ольга Рєпіна</h3>
@@ -271,9 +280,10 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/mykola.jpeg"
+                srcset="./images/mykola-270.jpeg 270w, ./images/mykola-540.jpeg 540w, ./images/mykola-810.jpeg 810w"
+                src="./images/mykola-270.jpeg"
                 alt="Портрет Миколи"
-                width="100%"
+                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="member">
                 <h3 class="member__title">Микола Тарасов</h3>
@@ -315,9 +325,10 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/misha.jpeg"
+                srcset="./images/misha-270.jpeg 270w, ./images/misha-540.jpeg 540w, ./images/misha-810.jpeg 810w"
+                src="./images/misha-270.jpeg"
                 alt="Портрет Михайла"
-                width="100%"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
               <div class="member">
                 <h3 class="member__title">Михайло Єрмаков</h3>
@@ -641,6 +652,6 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
