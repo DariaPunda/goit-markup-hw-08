@@ -1203,8 +1203,8 @@ header {
   fill: #2196f3;
 }
 
-.menu__list {
-  margin-bottom: 306px;
+.contact-wrap {
+  margin-top: auto;
 }
 
 .menu__item:not(:last-child) {
