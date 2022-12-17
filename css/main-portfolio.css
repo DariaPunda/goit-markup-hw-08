@@ -553,6 +553,7 @@ header {
 @media screen and (min-width: 1200px) {
   .address {
     margin-right: 90px;
+    margin-bottom: 0;
   }
 }
 
